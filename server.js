@@ -10,7 +10,10 @@ const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json()); // For parsing JSON bodies
-app.use(cors()); // Allow cross-origin requests
+app.use(cors({
+  origin: "https://wonderful-jalebi-bb7636.netlify.app"  // Replace with your actual Netlify URL
+}));
+
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)

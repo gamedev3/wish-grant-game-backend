@@ -11,7 +11,7 @@ const port = process.env.PORT || 5000;
 // Middleware
 app.use(express.json()); // For parsing JSON bodies
 app.use(cors({
-  origin: "https://wonderful-jalebi-bb7636.netlify.app"  // Replace with your actual Netlify URL
+  origin: "thriving-rugelach-060979.netlify.app"  // Replace with your actual Netlify URL
 }));
 
 
